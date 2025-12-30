@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ✨</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- FIREWORK -->
+<canvas id="fw"></canvas>
+
+<!-- LOADING -->
+<div id="loader">
+    <h2>Preparing something special…</h2>
+    <p>Please wait</p>
+</div>
+
+<!-- PASSWORD -->
+<div class="lock" id="lock">
+    <div class="lock-box">
+        <h1>Private Access</h1>
+        <p>Enter the special password</p>
+        <input type="password" id="pass" placeholder="Password">
+        <button onclick="unlock()">Enter</button>
+    </div>
+</div>
+
+<!-- CONTROLS -->
+<div class="controls">
+    <button onclick="toggleTheme()">Theme</button>
+    <button onclick="toggleMusic()">Music</button>
+    <button onclick="sharePage()">Share</button>
+</div>
+
+<!-- MAIN -->
+<div class="wrapper" id="main">
+    <div class="card">
+        <img src="https://i.imgur.com/6VBx3io.jpg" alt="Photo">
+
+        <h2>Happy Birthday</h2>
+        <p>A day worth celebrating — elegant, meaningful, unforgettable ✨</p>
+
+        <div class="countdown" id="cd"></div>
+        <div class="age" id="age"></div>
+
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+            <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        </div>
+
+        <video controls>
+            <source src="https://cdn.pixabay.com/video/2022/08/31/129201-744782726_large.mp4">
+        </video>
+
+        <button class="action" onclick="openPop()">Open Message</button>
+    </div>
+</div>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+    <div class="popup-box">
+        <h3>For You 🎂</h3>
+        <p>
+            May every year bring confidence, joy, and moments worth remembering.
+            This is your time to shine.
+        </p>
+        <button class="action" onclick="closePop()">Close</button>
+    </div>
+</div>
+
+<!-- MUSIC -->
+<audio id="music" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_8f9c8c6a5a.mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
